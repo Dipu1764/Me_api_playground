@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 	"info": {
 		"_postman_id": "12345678-1234-1234-1234-123456789012",
@@ -505,4 +506,513 @@
 			"type": "string"
 		}
 	]
+=======
+{
+	"info": {
+		"_postman_id": "12345678-1234-1234-1234-123456789012",
+		"name": "Me-API Playground",
+		"description": "Complete API collection for the Me-API Playground project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/health",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"health"
+					]
+				},
+				"description": "Check API health status"
+			},
+			"response": []
+		},
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "Get Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/profile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john.doe@example.com\",\n  \"phone\": \"+1-555-0123\",\n  \"location\": \"San Francisco, CA\",\n  \"bio\": \"Full-stack developer passionate about building scalable web applications\",\n  \"resume_link\": \"https://example.com/resume/john-doe.pdf\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/profile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"John Smith\",\n  \"location\": \"New York, NY\",\n  \"bio\": \"Senior full-stack developer with expertise in modern web technologies\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/profile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Skills",
+			"item": [
+				{
+					"name": "Get All Skills",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/skills",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"skills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Top Skills",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/skills/top?limit=5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"skills",
+								"top"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Skill",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Docker\",\n  \"category\": \"DevOps\",\n  \"proficiency_level\": 4,\n  \"years_of_experience\": 3.0\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/skills",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"skills"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "Get All Projects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/projects",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter Projects by Skill",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/projects?skill=Python",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"projects"
+							],
+							"query": [
+								{
+									"key": "skill",
+									"value": "Python"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Project by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/projects/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"projects",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Task Management API\",\n  \"description\": \"RESTful API for task management with user authentication and real-time notifications\",\n  \"technologies\": \"Python,FastAPI,PostgreSQL,WebSockets\",\n  \"github_link\": \"https://github.com/johndoe/task-api\",\n  \"live_link\": \"https://api.taskmanager.example.com\",\n  \"start_date\": \"08/2022\",\n  \"end_date\": \"12/2022\",\n  \"status\": \"completed\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/projects",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Education",
+			"item": [
+				{
+					"name": "Get Education",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/education",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"education"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Education",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"institution\": \"MIT\",\n  \"degree\": \"Bachelor of Science\",\n  \"field_of_study\": \"Computer Science\",\n  \"start_date\": \"09/2014\",\n  \"end_date\": \"05/2018\",\n  \"grade\": \"3.9 GPA\",\n  \"description\": \"Graduated Summa Cum Laude\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/education",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"education"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Work Experience",
+			"item": [
+				{
+					"name": "Get Work Experience",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/work",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"work"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Work Experience",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"company\": \"Google\",\n  \"position\": \"Software Engineer\",\n  \"location\": \"Mountain View, CA\",\n  \"start_date\": \"01/2022\",\n  \"end_date\": \"Present\",\n  \"description\": \"Developing scalable backend services for Google Search\",\n  \"technologies\": \"Python,Go,Kubernetes,BigQuery\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/work",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"work"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Links",
+			"item": [
+				{
+					"name": "Get Links",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/links",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"links"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Link",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"platform\": \"twitter\",\n  \"url\": \"https://twitter.com/johndoe\",\n  \"display_name\": \"@johndoe\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/links",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"links"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"item": [
+				{
+					"name": "Search All Content",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/search?q=python",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "python"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Projects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/search?q=e-commerce",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "e-commerce"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Skills",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/search?q=react",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "react"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000",
+			"type": "string"
+		}
+	]
+>>>>>>> ac3d1a1848664a93ad8763713f315124e9e6f55e
 }

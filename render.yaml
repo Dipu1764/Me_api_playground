@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 services:
   - type: web
     name: me-api-playground
@@ -9,4 +10,17 @@ services:
       - key: PYTHON_VERSION
         value: 3.11.0
       - key: ENVIRONMENT
+=======
+services:
+  - type: web
+    name: me-api-playground
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python seed_data.py && uvicorn main:app --host=0.0.0.0 --port=$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: ENVIRONMENT
+>>>>>>> ac3d1a1848664a93ad8763713f315124e9e6f55e
         value: production
