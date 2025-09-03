@@ -484,5 +484,6 @@ This project is created for educational and demonstration purposes. Feel free to
 
 ---
 
-Built with ❤️ using FastAPI and modern web technologies.#   M e _ a p i _ p l a y g r o u n d  
+Built with ❤️ using FastAPI and modern web technologies.#   M e _ a p i _ p l a y g r o u n d 
+ 
  
