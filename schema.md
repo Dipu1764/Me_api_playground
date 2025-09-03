@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Database Schema Documentation
 
 This document describes the database schema used in the Me-API Playground project.

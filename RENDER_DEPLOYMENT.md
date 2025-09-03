@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🚀 Render Deployment Guide
 
 Your Me-API Playground is now ready for deployment on Render!

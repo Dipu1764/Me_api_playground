@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @echo off
 echo Starting Me-API Playground...
 echo.

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Me-API Playground - Deployment Summary
 
 ## 🎉 Project Complete!
