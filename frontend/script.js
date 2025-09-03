@@ -369,7 +369,10 @@ function showTab(tabName) {
     document.getElementById(tabName).classList.add('active');
     
     // Add active class to clicked button
-    event.target.classList.add('active');
+    const clickedButton = event ? event.target : document.querySelector(`[onclick="showTab('${tabName}')"]`);
+    if (clickedButton) {
+        clickedButton.classList.add('active');
+    }
 }
 
 // Utility function to format dates
