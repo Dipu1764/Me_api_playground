@@ -7,6 +7,6 @@ services:
     startCommand: python seed_data.py && uvicorn main:app --host=0.0.0.0 --port=$PORT
     envVars:
       - key: PYTHON_VERSION
-        value: 3.11.7
+        value: 3.11.9
       - key: ENVIRONMENT
         value: production
